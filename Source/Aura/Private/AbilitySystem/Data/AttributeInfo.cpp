@@ -3,7 +3,7 @@
 
 #include "AbilitySystem/Data/AttributeInfo.h"
 
-FAuraAttributeInfo UAttributeInfo::FindAtributeInfoForTag(const FGameplayTag& AttributeTag, bool bLogNotFound) const
+FAuraAttributeInfo UAttributeInfo::FindAttributeInfoForTag(const FGameplayTag& AttributeTag, bool bLogNotFound) const
 {
 	for (const FAuraAttributeInfo& Info : AttributeInformation)
 	{
@@ -15,7 +15,7 @@ FAuraAttributeInfo UAttributeInfo::FindAtributeInfoForTag(const FGameplayTag& At
 
 	if (bLogNotFound)
 	{
-		UE_LOG(LogTemp, Error, TEXT("Cant find infor for attribute tag [%s] on AttributeInfo [%s]."), *AttributeTag.ToString(), *GetNameSafe(this));
+		UE_LOG(LogTemp, Error, TEXT("Cant find info for attribute tag [%s] on AttributeInfo [%s]."), *AttributeTag.ToString(), *GetNameSafe(this));
 	}
 
 	return FAuraAttributeInfo();
