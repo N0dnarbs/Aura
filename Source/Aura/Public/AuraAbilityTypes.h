@@ -6,13 +6,6 @@
 #include "GameplayEffectTypes.h"
 #include "AuraAbilityTypes.generated.h"
 
-/**class AURA_API AuraAbilityTypes
-{
-public:
-	AuraAbilityTypes();
-	~AuraAbilityTypes();
-};
-*/
 
 USTRUCT(BlueprintType)
 struct FAuraGameplayEffectContext : public FGameplayEffectContext
